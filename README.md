@@ -1,3 +1,7 @@
+# Who's that Pokemon?
+
+Welcome to a test Pokemon React application. This project is based on the Anime Pokemon. Before the commercial break, the viewer is asked to guess a Pokemon, hidden in black and before the show returns, the correct pokemon is displayed. This game attempts to mirror that. A collect of 50 pokemon names are stored within the application. Within those 50, 4 random pokemon are selected with one being the correct answer and the user is asked to guess which pokemon it is. If a correct answer is given, the user scores both points.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

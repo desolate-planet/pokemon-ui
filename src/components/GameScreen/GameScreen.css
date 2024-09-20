@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+main {
+  position: relative;
+  width: 575px;
+  background-image: url("https://res.cloudinary.com/dzynqn10l/image/upload/v1633196203/Msc/pokemon-bg_ig4uv3.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+}
+
+main.fetching #pokeball {
+  visibility: visible;
+}
+
+main.fetching #pokemon-image {
+  visibility: hidden;
+  display: none;
+}
+
+main.fetching #choices {
+  display: none;
+}
+
+main.revealed #pokemon-image {
+  filter: none;
+}
+
+main.revealed #answer {
+  display: block;
+}
+
+#pokemon-container {
+  height: 355px;
+}
+
+#answer {
+  display: none;
+}
+
+.show-play-button {
+  visibility: visible;
+}
+
+.hide-play-button {
+  visibility: hidden;
+}
+
+.show-end-play-button {
+  visibility: visible;
+}
+
+.hide-end-play-button {
+  visibility: hidden;
+}
+
+.show-next-button {
+  visibility: visible;
+}
+
+.hide-next-button {
+  visibility: hidden;
+}
+
+#bg-overlay {
+  color: #fff;
+  position: absolute;
+  background-color: #dd1716;
+  right: 25px;
+  width: 170px;
+  height: 170px;
+  top: 60px;
+  border-radius: 50%;
+}
+
+#text-overlay {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  background-color: #ffcb02;
+  border: solid 7px #f50909;
+  padding: 20px;
+  min-width: 130px;
+  font-family: "Bangers", Arial, sans-serif;
+  font-size: 36px;
+  letter-spacing: 1.2px;
+  color: #3ea2fe;
+  text-shadow: 2px 2px #1d366c;
+  border-radius: 20px;
+  text-align: center;
+}
+
+#control-panel {
+  float: left;
+}
+
+#controls {
+  position: absolute;
+  padding: 20px 40px;
+}
+
+button {
+  background: #fff;
+  border: none;
+  color: #c44c15;
+  padding: 10px 36px;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+#pokemon-image {
+  margin: 135px 0 0 140px;
+  transform: scale(2.5);
+  filter: brightness(0);
+  transition: filter 0.5s ease-out;
+  position: absolute;
+  left: 0;
+}
+
+#choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+}
